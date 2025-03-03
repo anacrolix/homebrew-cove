@@ -1,9 +1,14 @@
 # This is the homebrew formula for cove.
 
 class Cove < Formula
-  desc "A combined BitTorrent frontend and DHT indexer for personal use"
+  desc "Combined BitTorrent frontend and DHT indexer for personal use"
   homepage "https://github.com/anacrolix/cove"
   version "0.5.1"
+
+  livecheck do
+    url :homepage
+    strategy :github_latest
+  end
 
   def self.cove_url
     os = OS.mac? ? "darwin" : "linux"
