@@ -3,7 +3,7 @@
 class Cove < Formula
   desc "A combined BitTorrent frontend and DHT indexer for personal use"
   homepage "https://github.com/anacrolix/cove"
-  version "0.4.10"
+  version "0.5.1"
 
   def self.cove_url
     os = OS.mac? ? "darwin" : "linux"
